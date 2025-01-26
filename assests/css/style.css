@@ -1,0 +1,713 @@
+body {
+    font-family: 'Arial', sans-serif; /* Sets a clean, sans-serif font for the whole site */
+    background-color: #f4f4f9; /* Light gray background for better readability */
+    color: #181818; /* Dark text color for contrast */
+    margin: 0; /* Removes default browser margin */
+    padding: 0; /* Removes default browser padding */
+    line-height: 1.6; /* Improves text readability */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Headings (h1 to h6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; /* Differentiates headings with a serif font */
+    color: #444; /* Slightly lighter color for headings */
+    margin-top: 0; /* Prevents unnecessary margin above headings */
+    margin-bottom: 10px; /* Adds consistent spacing below headings */
+    line-height: 1.3; /* Tightens line spacing for headings */
+}
+
+/* Specific font sizes for headings */
+h1 {
+    font-size: 2.5rem; /* Largest heading */
+    font-weight: bold; /* Makes it stand out */
+}
+
+h2 {
+    font-size: 1.5rem; /* Slightly smaller than h1 */
+    font-weight: bold;
+}
+  
+h3 {
+    font-size: 1.25rem;
+}
+  
+h4 {
+    font-size: 1.15rem;
+}
+  
+h5 {
+    font-size: 1rem;
+}
+  
+h6 {
+    font-size: 0.75rem; /* Smallest heading */
+    font-style: italic; /* Adds a different style to differentiate it */
+}
+s
+
+/* Anchor links (a) */
+a {
+    color: #007bff; /* Default link color: blue */
+    text-decoration: none; /* Removes underline for cleaner look */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+  
+a:hover {
+    color: #9110b8; /* Darker shade of blue when hovered */
+    text-decoration: underline; /* Adds underline for visual feedback */
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for contrast */
+    padding: 20px 0; /* Adds vertical padding to the header */
+    position: sticky; /* Keeps the header fixed at the top when scrolling */
+    top: 0; /* Ensures it sticks at the very top */
+    z-index: 1000; /* Places the header above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Navigation styles inside header */
+header nav {
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* center the content (e.g., logo and nav items) */
+    align-items: center; /* Centers items vertically */
+    max-width: 1200px; /* Limits the width of the navigation */
+    margin: 0 auto; /* Centers the navigation content */
+    padding: 0 20px; /* Adds padding on the sides for spacing */
+}
+
+/* Navigation menu styles */
+.nav-menu {
+    list-style: none; /* Removes default bullet points */
+    display: flex; /* Makes the menu items horizontal */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+
+}
+
+.nav-menu li {
+    margin: 0 30px; /* Adds spacing between menu items */
+}
+
+.nav-menu li a {
+    color: #fff; /* White text for nav links */
+    text-transform: uppercase; /* Makes the text all caps */
+    font-size: 1rem; /* Sets a consistent font size */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    text-decoration:none;
+    transition: color 0.3s ease, opacity 0.2s ease-in; /* Smooth hover transition */
+    opacity: 1;
+}
+
+.nav-menu li a:hover {
+    color: #6bb5fa; /* Lighter color for hover effect */
+    text-decoration: underline; /* Underline for emphasis */
+    opacity: 0.8;
+}
+
+/* Style for the active link */
+nav a.active {
+    font-weight: bold; /* Example: make the active link bold */
+    color: #6bb5fa; /* Example: change the active link color */
+    border-bottom: 2px solid rgb(37, 93, 197); /* Example: Add a underline to active link */
+}
+
+/* Main Section */
+#main {
+    background-color: #f9f9fc; /* Light background for contrast */
+    padding: 40px 20px; /* Adds spacing around the section */
+    margin: 0 auto; /* Centers the content */
+    max-width: 1200px; /* Restricts the width for better readability */
+    border-top: 2px solid #00ffe9; /* Subtle border to separate sections */
+}
+
+/* Main content inside the main section */
+.main-content {
+    display: flex; /* Aligns items side by side */
+    flex-direction: column; /* Stacks items vertically by default */
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers the text inside */
+}
+
+/* Main Heading (h1) */
+h1#intro {
+    font-size: 3rem; /* Large, prominent heading */
+    font-weight: bold; /* Makes it stand out */
+    margin-bottom: 20px; /* Adds spacing below the heading */
+    color: #333; /* Dark text for contrast */
+    text-transform: uppercase; /* Makes the text all caps */
+    letter-spacing: 1px; /* Adds letter spacing for a bold appearance */
+}
+
+/* Career Divs */
+.career {
+    display: flex; /* Aligns items side by side */
+    flex-direction: column; /* Stacks image, h2, and p tags vertically */
+    align-items: center; /* Centers content inside the div */
+    background-color: #7aff896e; /* green background for contrast */
+    border: 2px solid #00d1e3; /* Adds a border to separate content */
+    border-radius: 10px; /* Rounds the corners */
+    padding: 20px; /* Adds spacing inside the div */
+    margin: 20px 0; /* Adds vertical spacing between career divs */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Restricts the width of each div */
+}
+
+/* Images inside .career */
+.career img {
+    max-width: 100%; /* Ensures the image fits within its container */
+    border-radius: 10px; /* Matches the div's rounded corners */
+    margin-bottom: 10px; /* Adds spacing below the image */
+}
+
+/* Career Heading (h2) */
+.career h2 {
+    font-size: 1.8rem; /* Slightly smaller than the main heading */
+    color: #001b5b; /* dark blue for differentiation */
+    margin: 10px 0; /* Adds spacing above and below the heading */
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+}
+
+/* Career Paragraphs (p) */
+.career p {
+    font-size: 1rem; /* Default font size for paragraphs */
+    color: #2b2323; /* dark brown for a harder appearance */
+    line-height: 1.6; /* Improves readability */
+    margin: 10px 0; /* Adds spacing above and below paragraphs */
+    text-align: left; /* Aligns the text to the left */
+}
+
+/* Links Divs */
+.links {
+    margin: 20px 0; /* Adds vertical spacing between the link divs */
+    padding: 15px; /* Adds spacing inside the div */
+    border: 1px solid #a73232; /* Subtle border for separation */
+    border-radius: 8px; /* Rounds the corners */
+    background-color: #fcfffa; /* Light background for contrast */
+    text-align: center; /* Centers the text and links */
+    max-width: 500px; /* Restricts the width of the div */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Links Heading (h3) */
+.links h3 {
+    font-size: 1.5rem; /* Makes the heading noticeable */
+    color: #444; /* Medium-dark gray for readability */
+    margin-bottom: 10px; /* Adds spacing below the heading */
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+}
+
+/* Anchor Links inside .links */
+.links a {
+    color: #007bff; /* Blue for links */
+    font-size: 1rem; /* Default font size */
+    text-decoration: none; /* Removes underline for a cleaner look */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effects */
+    margin: 8px;
+}
+
+.links a:hover {
+    color: #0056b3; /* Darker blue for hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Details Tag */
+details {
+    background-color: #fff; /* White background for better readability */
+    padding: 15px; /* Adds spacing inside the details */
+    border: 1px solid #ddd; /* Subtle border for separation */
+    border-radius: 8px; /* Rounds the corners */
+    margin: 20px 0; /* Adds spacing above and below the details */
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+summary {
+    font-weight: bold; /* Highlights the summary text */
+    font-size: 1.1rem; /* Makes the summary larger */
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 8px; /* Adds spacing below the summary */
+}
+
+details p {
+    font-size: 1rem; /* Default font size for paragraphs */
+    color: #666; /* Light gray for a softer appearance */
+    line-height: 1.6; /* Improves readability */
+    margin: 10px 0; /* Adds spacing above and below paragraphs */
+    text-align: left; /* Aligns the text to the left */
+}
+
+/* Section: Dev,aimlds */
+#dev, #aimlds {
+    background-color: #eef5ff; /* Light blue background for differentiation */
+    padding: 40px 20px; /* Adds spacing around the section */
+    margin: 10px auto; /* Centers the section */
+    max-width: 1200px; /* Restricts the width */
+    border-top: 2px solid #7ca2f9; /* Subtle separation */
+}
+
+/* fsdev and ai-ds divisions */
+.fsdev, .ai-ds {
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text */
+    padding: 20px; /* Adds inner spacing */
+    background-color: #fff; /* White background for a clean look */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Main Heading inside fsdev and aids */
+.fsdev h1, .ai-ds h1 {
+    font-size: 2.5rem; /* Prominent heading */
+    font-weight: bold;
+    color: #003366; /* Deep blue for a professional feel */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Main Image */
+.fsdev .mainimage img,
+.ai-ds .mainimage img {
+    max-width: 100%; /* Ensures responsiveness */
+    max-height: fit-content;
+    height: 400px; /* Maintains aspect ratio */
+    border-radius: 100px; /* Rounded corners */
+    margin-bottom: 10px; /* Spacing below the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+
+}
+
+/* Small Heading (p) */
+.fsdev p {
+    font-size: 1.2rem; /* Slightly larger than default */
+    color: #444; /* Medium-dark gray */
+    margin-bottom: 20px; /* Spacing below the text */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Roadmap Container */
+.roadmap-container {
+    margin-top: 20px; /* Adds spacing from the content above */
+    padding: 20px; /* Inner spacing */
+    background-color: #fefaff; /* Very light background for separation */
+    border: 2px solid #9ce955; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Roadmap Sections */
+.roadmap-sections {
+    margin-bottom: 30px; /* Adds spacing below sections */
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.8rem; /* Large, distinct title */
+    color: #005ebb; /* Matches the main heading */
+    margin-bottom: 10px; /* Spacing below the title */
+    font-weight: bold;
+}
+
+/* Ordered List in Roadmap */
+.roadmap-sections ol {
+    margin: 20px 0; /* Adds vertical spacing */
+    padding-left: 40px; /* Indents the list */
+    color: #444; /* Medium gray */
+}
+  
+.roadmap-sections ol li {
+    margin-bottom: 10px; /* Adds spacing between items */
+    font-size: 1rem; /* Default text size */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Unordered List in Roadmap */
+.roadmap-sections ul{
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.roadmap-sections ul li{
+    font-size: 1rem;
+    margin-bottom: 8px;
+    list-style:none; /* no bullets */
+}
+
+/* Sub-headings inside Roadmap */
+.innertitile {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #024996; /* Blue for emphasis */
+    margin-top: 15px; /* Spacing above the sub-heading */
+}
+
+/* Resources Section inside Roadmap */
+.resou {
+    margin-top: 30px; /* Spacing from the roadmap sections above */
+    padding: 15px; /* Inner padding */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading for Resources */
+.resou h3 {
+    font-size: 1.4rem; /* Slightly larger for emphasis */
+    font-weight: bold;
+    color: #00853c; /* Darker blue */
+    margin-bottom: 10px;
+}
+
+/* Unordered List for Resources */
+.resou ul {
+    padding: 10px; /* Indents the list */
+}
+
+.resou ul li {
+    margin-bottom: 10px; /* Adds spacing between items */
+    font-size: 1rem; /* Default font size */
+    color: #444; /* Medium-dark gray */
+    line-height: 1.6; /* Improves readability */
+    list-style:none;
+}
+
+/* Anchor Links inside Resources */
+.resou ul li a {
+    color: #007bff; /* Blue for links */
+    font-size: 1rem; /* Default font size */
+    text-decoration: none; /* Removes underline for a cleaner look */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effects */
+    margin: 8px;
+}
+  
+.resou ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Section: Salary */
+#sal {
+    background-color: #f0f8ff; /* Light pastel blue for distinction */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-top: 2px solid #fd4242;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Salary Section Container */
+.salary {
+    text-align: center;
+}
+
+/* Main Heading */
+.salary h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004085;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+  
+  /* Subheading */
+.salary h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Country Selector */
+.salary label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+    margin-right: 10px;
+}
+
+#country-selector {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 3px solid #0eede1;
+    border-radius: 10px;
+    background-color: #fdf586;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: border-color 1s ease-in-out;
+}
+
+#country-selector option{
+    background-color: #82c988;
+}
+
+#country-selector:hover,
+#country-selector:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+
+/* Salary Table */
+#salary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#salary-table thead tr {
+    background-color: #004085;
+    color: #fff;
+    text-align: center;
+}
+
+#salary-table th,
+#salary-table td {
+  padding: 15px;
+  border: 1px solid #6edb40;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#salary-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#salary-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+  
+#salary-table tbody tr:nth-child(even) {
+    background-color: #eef5ff;
+}
+
+#salary-table tbody td {
+    color: #161515;
+    font-weight: bold;
+}
+  
+#salary-table tbody td#ai_ml_salary,
+#salary-table tbody td#data_science_salary,
+#salary-table tbody td#full_stack_salary {
+    font-weight: bold;
+    color: #790063;
+}
+
+/* Job Boards Section */
+.salary p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.salary ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+  
+.salary ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+  
+.salary ul li a {
+    color: #007bff; /* Blue for links */
+    font-size: 1rem; /* Default font size */
+    text-decoration: none; /* Removes underline for a cleaner look */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effects */
+    margin: 8px;
+}
+  
+.salary ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Section: Feedback */
+#feed {
+    background-color: #e6f7ff; /* Soft light blue background */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-top: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Feedback Section Container */
+#feed h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004085;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+/* Media Section */
+.medias {
+    margin-bottom: 40px;
+}
+
+.medias h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 15px;
+}
+  
+.medias p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+  
+video,
+audio {
+    display: block;
+    margin: 10px auto 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Interactive Canvas Section */
+.can {
+    margin-bottom: 40px;
+}
+  
+.can h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 15px;
+}
+  
+.can p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+  
+canvas {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: crosshair;
+}  
+
+/* Feedback Form Section */
+.feedform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.feedform h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.feedform form {
+    display: block;
+ 
+}
+
+
+.feedform label {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.feedform input[type="text"],
+.feedform input[type="email"],
+.feedform input[type="date"] {
+  font-size: 1rem;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 2px solid #74ff7b;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.feedform input[type="radio"],
+.feedform input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.feedform input[type="submit"],
+.feedform input[type="reset"] {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.feedform input[type="submit"]:hover,
+.feedform input[type="reset"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.feedform .error {
+    font-size: 0.9rem;
+    color: red;
+}
+
+/* Footer Section */
+footer {
+    background-color: #003366; /* Dark blue background for contrast */
+    color: #ffffff; /* White text for readability */
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-top: 2px solid #004085;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+footer p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+  
+footer p:hover {
+    text-decoration: underline; /* Subtle hover effect */
+    cursor: pointer;
+}
+  
